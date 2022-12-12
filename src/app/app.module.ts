@@ -33,6 +33,10 @@ const myRoute:Routes=[
   {
     path:"viewsec",
     component:ViewsecComponent
+  },
+  {
+    path:"searchemp",
+    component:SearchempComponent
   }
 ]
 
