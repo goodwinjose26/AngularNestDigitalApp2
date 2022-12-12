@@ -38,6 +38,10 @@ const myRoute:Routes=[
   {
     path:"searchemp",
     component:SearchempComponent
+  },
+  {
+    path:"emplogin",
+    component:EmploginComponent
   }
 ]
 
