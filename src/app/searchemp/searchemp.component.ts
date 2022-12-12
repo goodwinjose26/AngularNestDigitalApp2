@@ -48,7 +48,7 @@ deleteBtnClick=(id:any)=>
         console.log(generated)
         if(generated.status == "success")
         {
-          alert("Student Deleted")
+          alert("Employee Deleted")
           this.router.navigate(["/viewemp"])
         }
         else{
