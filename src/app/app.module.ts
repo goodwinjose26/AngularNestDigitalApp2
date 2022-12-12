@@ -5,16 +5,34 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AdminnavbarComponent } from './adminnavbar/adminnavbar.component';
 import { AdminloginComponent } from './adminlogin/adminlogin.component';
+import { AddempComponent } from './addemp/addemp.component';
+import { RouterModule, Routes } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+const myRoute:Routes=[
+  {
+    path:"",
+    component:AdminloginComponent
+  }
+  {
+    path:"addemp",
+    component:AddempComponent
+  }
+]
 
 @NgModule({
   declarations: [
     AppComponent,
     AdminnavbarComponent,
-    AdminloginComponent
+    AdminloginComponent,
+    AddempComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
