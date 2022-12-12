@@ -12,6 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AddsecComponent } from './addsec/addsec.component';
 import { ViewempComponent } from './viewemp/viewemp.component';
 import { ViewsecComponent } from './viewsec/viewsec.component';
+import { SearchempComponent } from './searchemp/searchemp.component';
 const myRoute:Routes=[
   {
     path:"",
@@ -43,7 +44,8 @@ const myRoute:Routes=[
     AddempComponent,
     AddsecComponent,
     ViewempComponent,
-    ViewsecComponent
+    ViewsecComponent,
+    SearchempComponent
   ],
   imports: [
     BrowserModule,
