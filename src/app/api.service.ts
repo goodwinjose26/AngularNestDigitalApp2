@@ -27,6 +27,14 @@ export class ApiService {
     return this.http.get("http://localhost:8080/viewsec")
   }
 
+  searchemp=(datatosend:any)=>
+  {
+    return this.http.post("http://localhost:8080/searchemp",datatosend)
+  }
+  deleteemployee=(datatosend:any)=>
+  {
+    return this.http.post("http://localhost:8080/deleteemp",datatosend)
+  }
   
 
 }
