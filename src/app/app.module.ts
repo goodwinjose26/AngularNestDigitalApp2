@@ -9,6 +9,7 @@ import { AddempComponent } from './addemp/addemp.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { AddsecComponent } from './addsec/addsec.component';
 const myRoute:Routes=[
   {
     path:"",
@@ -17,6 +18,10 @@ const myRoute:Routes=[
   {
     path:"addemp",
     component:AddempComponent
+  },
+  {
+    path:"addsec",
+    component:AddsecComponent
   }
 ]
 
@@ -25,7 +30,8 @@ const myRoute:Routes=[
     AppComponent,
     AdminnavbarComponent,
     AdminloginComponent,
-    AddempComponent
+    AddempComponent,
+    AddsecComponent
   ],
   imports: [
     BrowserModule,

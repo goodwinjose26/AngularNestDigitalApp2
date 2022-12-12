@@ -14,16 +14,9 @@ export class ApiService {
     return this.http.post("http://localhost:8080/addemployee",datatosend)
   }
   
-   addLogin=(dataToSend:any)=>
-   {
-     return this.http.post("http://localhost:8080/login",dataToSend)
-   }
- 
-
-  
-  viewemp =()=>
+  secValues=(datatosend:any)=>
   {
-    return this.http.get("http://localhost:8080/view")
+    return this.http.post("http://localhost:8080/addsecurity",datatosend)
   }
 
   
