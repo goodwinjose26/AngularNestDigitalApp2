@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-addemp',
@@ -26,7 +27,7 @@ export class AddempComponent {
   {
     
     
-    let data:any={"name":this.name,"empcode":this.empcode,"designation":this.designation,address":this.address,"email":this.email,"phno":this.phno,"username":this.username,"password":this.password}
+    let data:any={"name":this.name,"empcode":this.empcode,"designation":this.designation,"address":this.address,"email":this.email,"phno":this.phno,"username":this.username,"password":this.password}
     console.log(data)
     this.api.regValues(data).subscribe(
       (response:any)=>
