@@ -13,7 +13,7 @@ const myRoute:Routes=[
   {
     path:"",
     component:AdminloginComponent
-  }
+  },
   {
     path:"addemp",
     component:AddempComponent
@@ -30,7 +30,7 @@ const myRoute:Routes=[
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule,
+    RouterModule.forRoot(myRoute),
     FormsModule,
     HttpClientModule
   ],
