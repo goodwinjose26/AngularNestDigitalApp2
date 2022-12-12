@@ -13,6 +13,7 @@ import { AddsecComponent } from './addsec/addsec.component';
 import { ViewempComponent } from './viewemp/viewemp.component';
 import { ViewsecComponent } from './viewsec/viewsec.component';
 import { SearchempComponent } from './searchemp/searchemp.component';
+import { EmploginComponent } from './emplogin/emplogin.component';
 const myRoute:Routes=[
   {
     path:"",
@@ -49,7 +50,8 @@ const myRoute:Routes=[
     AddsecComponent,
     ViewempComponent,
     ViewsecComponent,
-    SearchempComponent
+    SearchempComponent,
+    EmploginComponent
   ],
   imports: [
     BrowserModule,
