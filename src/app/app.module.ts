@@ -10,6 +10,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AddsecComponent } from './addsec/addsec.component';
+import { ViewempComponent } from './viewemp/viewemp.component';
 const myRoute:Routes=[
   {
     path:"",
@@ -22,6 +23,10 @@ const myRoute:Routes=[
   {
     path:"addsec",
     component:AddsecComponent
+  },
+  {
+    path:"viewemp",
+    component:ViewempComponent
   }
 ]
 
@@ -31,7 +36,8 @@ const myRoute:Routes=[
     AdminnavbarComponent,
     AdminloginComponent,
     AddempComponent,
-    AddsecComponent
+    AddsecComponent,
+    ViewempComponent
   ],
   imports: [
     BrowserModule,

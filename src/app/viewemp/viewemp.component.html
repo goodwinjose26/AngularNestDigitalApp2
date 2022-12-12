@@ -1,0 +1,29 @@
+<app-adminnavbar></app-adminnavbar>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">NAME</th>
+        <th scope="col">EMPLOYEE CODE</th>
+        <th scope="col">DESIGNATION</th>
+        <th scope="col">ADDRESS</th>
+        <th scope="col">EMAIL</th>
+        <th scope="col">PHONE NO</th>
+
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let i of data">
+        <td>{{i.name}}</td>
+        <td>{{i.empcode}}</td>
+        <td>{{i.designation}}</td>
+        <td>{{i.address}}</td>
+        <td>{{i.email}}</td>
+        <td>{{i.phno}}</td>
+        
+
+      </tr>
+    
+    </tbody>
+  </table>
