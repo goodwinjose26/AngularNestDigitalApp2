@@ -14,6 +14,7 @@ import { ViewempComponent } from './viewemp/viewemp.component';
 import { ViewsecComponent } from './viewsec/viewsec.component';
 import { SearchempComponent } from './searchemp/searchemp.component';
 import { EmploginComponent } from './emplogin/emplogin.component';
+import { EmpprofileComponent } from './empprofile/empprofile.component';
 const myRoute:Routes=[
   {
     path:"",
@@ -42,6 +43,10 @@ const myRoute:Routes=[
   {
     path:"emplogin",
     component:EmploginComponent
+  },
+  {
+    path:"empprofile",
+    component:EmpprofileComponent
   }
 ]
 
@@ -55,7 +60,8 @@ const myRoute:Routes=[
     ViewempComponent,
     ViewsecComponent,
     SearchempComponent,
-    EmploginComponent
+    EmploginComponent,
+    EmpprofileComponent
   ],
   imports: [
     BrowserModule,
