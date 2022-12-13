@@ -32,7 +32,7 @@ export class SecloginComponent {
           let seccode=response.userid
           console.log(seccode)
              localStorage.setItem("userInfo",seccode)
-             this.router.navigate(['/secprofileview'])
+             this.router.navigate(['/secprofile'])
            
         }
         else{
