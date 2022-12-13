@@ -12,7 +12,7 @@ export class EmploginComponent {
 
   username=""
   password=""
- // searchUser:any=[]
+  searchUser:any=[]
   
   constructor(private api:ApiService,private router:Router){}
   loginValues=()=>
