@@ -1,5 +1,5 @@
 <app-empnavbar></app-empnavbar>
-<div class="container">
+<!-- <div class="container">
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
             <div class="card" >
@@ -15,4 +15,21 @@
               </div>
         </div>
     </div>
+</div> -->
+
+<div class="card mb-3" >
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="https://cdn.pixabay.com/photo/2016/04/26/07/57/woman-1353825__340.png" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h1 class="card-title">Name:{{data[0].name}}</h1>
+        <h1 class="card-subtitle mb-2 text-muted"></h1>
+        <h1 class="card-text">Address:{{data[0].address}}</h1>
+        <h1 class="card-title">Email:{{data[0].email}}</h1>
+        <h1 class="card-title">Mobile no:{{data[0].phno}}</h1>
+      </div>
+    </div>
+  </div>
 </div>
