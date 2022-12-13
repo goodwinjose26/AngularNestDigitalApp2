@@ -15,7 +15,7 @@ export class EmploginComponent {
   searchUser:any=[]
   
   constructor(private api:ApiService,private router:Router){}
-  loginValues=()=>
+  loginValuesemp=()=>
   {
     let data:any={"username":this.username,"password":this.password}
     console.log(data)
