@@ -16,6 +16,8 @@ import { SearchempComponent } from './searchemp/searchemp.component';
 import { EmploginComponent } from './emplogin/emplogin.component';
 import { EmpprofileComponent } from './empprofile/empprofile.component';
 import { EmpnavbarComponent } from './empnavbar/empnavbar.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SecloginComponent } from './seclogin/seclogin.component';
 const myRoute:Routes=[
   {
     path:"",
@@ -48,6 +50,14 @@ const myRoute:Routes=[
   {
     path:"empprofile",
     component:EmpprofileComponent
+  },
+  {
+    path:"seclogin",
+    component:SecloginComponent
+  },
+  {
+    path:"secprofile",
+    component:
   }
 ]
 
@@ -63,14 +73,16 @@ const myRoute:Routes=[
     SearchempComponent,
     EmploginComponent,
     EmpprofileComponent,
-    EmpnavbarComponent
+    EmpnavbarComponent,
+    SecloginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(myRoute),
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
