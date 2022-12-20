@@ -51,4 +51,7 @@ export class ApiService {
   {
     return this.http.post("http://localhost:8080/secprofileview",dataToSend)
   }
+  applyLeave=(dataToSend:any)=>{
+    return this.http.post("http://localhost:8080/applyleave",dataToSend)
+  }
 }

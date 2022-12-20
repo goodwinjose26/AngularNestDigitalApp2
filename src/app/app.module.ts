@@ -19,6 +19,7 @@ import { EmpnavbarComponent } from './empnavbar/empnavbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SecloginComponent } from './seclogin/seclogin.component';
 import { SecprofileComponent } from './secprofile/secprofile.component';
+import { ApplyleaveComponent } from './applyleave/applyleave.component';
 const myRoute:Routes=[
   {
     path:"",
@@ -59,6 +60,10 @@ const myRoute:Routes=[
   {
     path:"secprofile",
     component:SecprofileComponent
+  },
+  {
+    path:"leave",
+    component:ApplyleaveComponent
   }
 ]
 
@@ -76,7 +81,8 @@ const myRoute:Routes=[
     EmpprofileComponent,
     EmpnavbarComponent,
     SecloginComponent,
-    SecprofileComponent
+    SecprofileComponent,
+    ApplyleaveComponent
   ],
   imports: [
     BrowserModule,
